@@ -9,6 +9,86 @@
         "experience": "Experience"
       }
     },
+    "gallery": [
+      {
+        "image": "images/gallery/photo1.png",
+        "date": "February 2020",
+        "location": "Austin, TX",
+        "description": "Quarantine Daniel"
+      },
+      {
+        "image": "images/gallery/photo3.png",
+        "date": "May 2022",
+        "location": "Austin, TX",
+        "description": "UT Admit Weekend"
+      },
+      {
+        "image": "images/gallery/photo4.png",
+        "date": "June 2022",
+        "location": "Austin, TX",
+        "description": "Wake Surfing Austin"
+      },
+      {
+        "image": "images/gallery/photo5.png",
+        "date": "April 2022",
+        "location": "Half Moon Bay, CA",
+        "description": "Beach Brawl"
+      },
+      {
+        "image": "images/gallery/photo6.png",
+        "date": "June 2023",
+        "location": "Monterey Bay, CA",
+        "description": "Snorkeling with Kelp"
+      },
+      {
+        "image": "images/gallery/photo7.png",
+        "date": "July 2023",
+        "location": "Palo Alto, CA",
+        "description": "DJ Session"
+      },
+      {
+        "image": "images/gallery/photo8.png",
+        "date": "August 2023",
+        "location": "Pacific Grove, CA",
+        "description": "Kayaking the Coast"
+      },
+      {
+        "image": "images/gallery/photo9.png",
+        "date": "August 2023",
+        "location": "Santa Cruz, CA",
+        "description": "Hidden Cafe Gem"
+      },
+      {
+        "image": "images/gallery/photo10.png",
+        "date": "September 2023",
+        "location": "San Jose, CA",
+        "description": "Haunted House Horrors"
+      },
+      {
+        "image": "images/gallery/photo11.png",
+        "date": "September 2023",
+        "location": "Palo Alto, CA",
+        "description": "Main Quad Hide & Seek"
+      },
+      {
+        "image": "images/gallery/photo12.png",
+        "date": "October 2023",
+        "location": "Palo Alto, CA",
+        "description": "Halloween Festivities"
+      },
+      {
+        "image": "images/gallery/photo13.png",
+        "date": "November 2023",
+        "location": "Palo Alto, CA",
+        "description": "Straight Hair Experiment"
+      },
+      {
+        "image": "images/gallery/photo14.png",
+        "date": "November 2023",
+        "location": "Palo Alto, CA",
+        "description": "Friends On Ice"
+      }
+    ],
     "projects": [
       {
         "title": "Animal Shelter",
@@ -81,37 +161,73 @@
     ],
     "experience": [
       {
-        "company": "DefOpenSource",
-        "title": "Front-End Developer",
-        "years": "10.2019 - present",
+        "company": "Lasso Solutions",
+        "title": "Full Stack Developer Intern",
+        "years": "06.2023 - 09.2023",
         "mainTech": [
-          "Angular 8/9/10"
+          "San Francisco, CA"
         ],
         "technologies": [
           "REST API",
-          "RxJS",
+          "React",
           "JavaScript",
           "Bootstrap",
-          "MDBootstrap",
-          "EF Core",
-          ".NET Core",
-          "SignalR",
-          "Angular Material"
+          "HTML/CSS",
+          "Python",
+          "NodeJS",
+          "Django",
+          "OAuth 2.0",
+          "AWS Lambdas",
+          "MySQL",
+          "HTTP/HTTPS"
         ]
       },
       {
-        "company": "Serros Solutions",
-        "title": "Intern",
-        "years": "01.2018 - 09.2019",
+        "company": "Naval Sea Systems Command",
+        "title": "Data Science Project Intern",
+        "years": "02.2023 - 09.2023",
         "mainTech": [
-          "Angular 7/8"
+          "Remote"
         ],
         "technologies": [
-          "RxJS",
-          "Django",
-          "PHP",
-          "JavaScript",
-          "DHTMLX Gantt"
+          "Machine learning",
+          "Python",
+          "Pytorch",
+          "Pandas",
+          "Sklearn",
+          "Data visualization"
+        ]
+      },
+      {
+        "company": "Department of Fish and Wildlife",
+        "title": "Software and Data Engineer",
+        "years": "11.2022 - 02.2023",
+        "mainTech": [
+          "Palo Alto, CA"
+        ],
+        "technologies": [
+          "Machine learning",
+          "Python",
+          "Data cleansing",
+          "Data augmentation",
+          "Data model architecture",
+          "Flask"
+        ]
+      },
+      {
+        "company": "Association For Computing Machinery",
+        "title": "Machine Learning Researcher",
+        "years": "11.2022 - 02.2023",
+        "mainTech": [
+          "Stanford, CA"
+        ],
+        "technologies": [
+          "Machine learning",
+          "Pytorch",
+          "BERT model",
+          "GloVe word embeddings",
+          "Text preprocessing",
+          "Logistic regression"
         ]
       }
     ]

@@ -1,4 +1,4 @@
-import React, { useEffect, Component } from "react";
+import React, { Component } from "react";
 import Typical from "react-typical";
 import Switch from "react-switch";
 import map from "../sources/map.webp";

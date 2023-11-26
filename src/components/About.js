@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Icon } from "@iconify/react";
-import angularIcon from "@iconify/icons-logos/angular-icon";
 import reactIcon from "@iconify/icons-logos/react";
-import vueIcon from "@iconify/icons-logos/vue";
+import mongoDBIcon from "@iconify/icons-logos/mongodb";
+import nodeJSIcon from "@iconify/icons-logos/nodejs";
 
 class About extends Component {
   render() {
@@ -38,9 +38,12 @@ class About extends Component {
               </div>
             </div>
 
-            <div className="col-md-8 ">
-              <h1 style={{ color: "black" }}>
-                <span>{sectionName}</span>
+            <div className="col-md-7">
+              <h1
+                className="section-header col-md-10"
+                style={{ color: "black" }}
+              >
+                <span className="section-header-title">{sectionName}</span>
               </h1>
               <div className="col-md-10">
                 <div className="card">
@@ -77,17 +80,22 @@ class About extends Component {
                     <br />
                     {about}
                     <div className="iconHolders">
-                      <Icon
-                        icon={angularIcon}
-                        style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
-                      />
+                      <p>
+                        The user interface is developed with React, the
+                        server-side operations are handled by NodeJS, and
+                        MongoDB is utilized as the database.
+                      </p>
                       <Icon
                         icon={reactIcon}
-                        style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
+                        style={{ fontSize: "400%", margin: "0% 5% 0 0%" }}
                       />
                       <Icon
-                        icon={vueIcon}
-                        style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
+                        icon={mongoDBIcon}
+                        style={{ fontSize: "400%", margin: "0% 5% 0 0%" }}
+                      />
+                      <Icon
+                        icon={nodeJSIcon}
+                        style={{ fontSize: "400%", margin: "0% 5% 0 0%" }}
                       />
                     </div>
                   </div>
