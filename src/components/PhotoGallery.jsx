@@ -97,9 +97,16 @@ const PhotoGallery = (props) => {
   };
 
   return (
-    <div id="PhotoGallery" className="col-md-12 center">
-      <div ref={screenRef} className="hex-grid">
-        {renderHexGrid()}
+    <div id="PhotoGallery">
+      <div className="col-md-12">
+        <h1 className="section-title2">
+          <span className="text-white section-header-title">Some Fun Photos</span>
+        </h1>
+      </div>
+      <div className="col-md-12 center">
+        <div ref={screenRef} className="hex-grid">
+          {renderHexGrid()}
+        </div>
       </div>
     </div>
   );

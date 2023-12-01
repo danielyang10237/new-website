@@ -91,71 +91,66 @@
     ],
     "projects": [
       {
-        "title": "Animal Shelter",
-        "startDate": "2020",
-        "description": "The most expanded application I had opportunity to work with. I've learned many technologies and my code was reviewed by awesome curator. Application handles all adoption processess and allows to store all evidence on adopting animals from animal shelter.",
+        "title": "Former Website",
+        "startDate": "2023",
+        "description": "Former public personal website coded from scratch without utilizing a template. The website front end is done with Vanilla Javascript development without the use of modern front-end frameworks like React. The decision to not utilize React, Angular, or Vue was made to deepen my understanding of the inner workings and fundamentals of web development. The back-end server is set up using nodejs and express that connects to a mongoDB for storage. The mongoDB is deployed with Mongo Atlas and the rest with Render. My github contains a public repo with the project code",
         "images": [
-          "images/portfolio/animal-shelter/p1.jpg",
-          "images/portfolio/animal-shelter/p2.jpg"
+          "images/portfolio/first-website/p1.jpg",
+          "images/portfolio/first-website/p1.png",
+          "images/portfolio/first-website/p2.png"
+        ],
+        "url": "https://personal-website-4dwv.onrender.com",
+        "technologies": [
+        ]
+      },
+      {
+        "title": "ML for Maintenance",
+        "startDate": "2023",
+        "description": "This project was done for the United States Naval Sea Systems Commands. We attempt to utilize vast quantities of aggregated data from current sensors aboard marine ships to proactively predict machine failure. An ensemble of supervised and unsupervised learning techniques were used to create a data model which accurately predicts anomalies and deviations in machine performance aboard active ships",
+        "images": [
+          "images/portfolio/naval/p1.jpg",
+          "images/portfolio/naval/p2.webp",
+          "images/portfolio/naval/p3.jpg"
+        ],
+        "url": "",
+        "file": "images/portfolio/naval/NAVSEA.pdf",
+        "technologies": [
+        ]
+      },
+      {
+        "title": "Argument Speech Classification",
+        "startDate": "2022",
+        "description": "Through an ensembling of BERT and GloVe with RidgeRegression, our project experimentations were able to accurately classify the human value categories that an argument draws on. Arguments consist of a premise, conclusion, and the premise’s stance on the conclusion.",
+        "images": [
+          "images/portfolio/speech/p1.jpg"
+        ],
+        "file": "images/portfolio/speech/semeval.pdf",
+        "technologies": [
+        ]
+      },
+      {
+        "title": "Access Forum Initiative",
+        "startDate": "2021",
+        "description": "Founded nonprofit aimed to promote speech and debate among younger students. Through summer camps, tournaments, fundraisers, and workshops, we have delivered over 300 hours of instructional hours to over 400 students and raised over 5k for new speech & debate teams!",
+        "images": [
+          "images/portfolio/AFI/AFI-cover.png",
+          "images/portfolio/AFI/AFI2.png",
+          "images/portfolio/AFI/AFI.jpg"
+        ],
+        "url": "https://www.accessforuminitiative.com/",
+        "technologies": [
+        ]
+      },
+      {
+        "title": "Chaps Hurricane Relief",
+        "startDate": "2021",
+        "description": "Founded nonprofit towards hurricane relief efforts along coastal Texas. Through a series of fundraisers, we were able to raise over 10k towards hurricane relief efforts and deliver over 2000 care packages of food and supplies to those in need!",
+        "images": [
+          "images/portfolio/hurricane/hur4.png",
+          "images/portfolio/hurricane/hur1.JPG"
         ],
         "url": "",
         "technologies": [
-          {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
-          }
-        ]
-      },
-      {
-        "title": "Photography",
-        "startDate": "2018",
-        "description": "Personal project for study subject. I was responsible for testing photography application that optimizes images with popular algorithms used by graphic editors like Pixlr or Adobe Photoshop. I've earned A grade :)",
-        "images": [
-          "images/portfolio/photography/p1.jpg",
-          "images/portfolio/photography/p2.jpg"
-        ],
-        "url": "https://github.com",
-        "technologies": [
-          {
-            "class": "devicon-react-original",
-            "name": "React"
-          },
-          {
-            "class": "devicon-javascript-plain",
-            "name": "JavaScript"
-          }
-        ]
-      },
-      {
-        "title": "3D Object Viewer",
-        "startDate": "2015",
-        "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
-        "images": [
-          "images/portfolio/adventure/p1.jpg",
-          "images/portfolio/adventure/p2.jpg"
-        ],
-        "url": "https://github.com",
-        "technologies": [
-          {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
-          }
         ]
       }
     ],

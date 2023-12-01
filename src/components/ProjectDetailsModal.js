@@ -12,6 +12,7 @@ class ProjectDetailsModal extends Component {
       var title = this.props.data.title;
       var description = this.props.data.description;
       var url = this.props.data.url;
+      var file = this.props.data.file;
       if (this.props.data.technologies) {
         var tech = technologies.map((icons, i) => {
           return (
@@ -88,6 +89,19 @@ class ProjectDetailsModal extends Component {
                 >
                   <i
                     className="fas fa-external-link-alt"
+                    style={{ marginLeft: "10px" }}
+                  ></i>
+                </a>
+              ) : null}
+              {file ? (
+                <a
+                  href={file}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="link-href"
+                >
+                  <i
+                    className="fas fa-file"
                     style={{ marginLeft: "10px" }}
                   ></i>
                 </a>

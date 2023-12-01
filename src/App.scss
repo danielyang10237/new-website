@@ -63,23 +63,23 @@ header {
 
 .animated-background-layer {
   position: absolute;
-  top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background-size: auto 100%;
+  height: auto;
+  background-size: cover;
+  min-width: 1000px;
   opacity: 0.2;
-  animation: slideAnimation 20s linear infinite;
+  animation: slideAnimation 25s linear infinite;
 }
 .animated-background-layer-2 {
   position: absolute;
-  top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background-size: auto 100%;
+  height: width;
+  background-size: cover;
+  min-width: 1000px;
   opacity: 0.2;
-  animation: slideAnimation2 20s linear infinite;
+  animation: slideAnimation2 25s linear infinite;
 }
 
 @keyframes slideAnimation {
@@ -260,6 +260,10 @@ header h1 {
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+.foto {
+  max-width: 600px;
 }
 
 // add a border shadow to the image
@@ -553,6 +557,15 @@ header h1 {
   text-align: center;
 }
 
+.section-title2 {
+  padding-top: 5%;
+  font: 18px/24px "opensans-bold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+  text-align: center;
+}
+
 .skill-icon {
   font-size: 180%;
   color: white;
@@ -591,7 +604,7 @@ footer a:focus {
   min-height: 200px;
   width: 100%;
   overflow: hidden;
-  padding-bottom: 10%;
+  padding: 0% 0 5% 0;
 }
 
 // center this element
@@ -644,7 +657,7 @@ footer a:focus {
 
 .back-hexa-description {
   background-color: #1f1f1f;
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
   color: white;
   display: flex;
   justify-content: center;
@@ -703,3 +716,313 @@ footer a:focus {
   transform: rotateY(180deg);
 }
 
+#SocalMedia {
+  background-color: #efe1bd;
+  min-height: 60rem;
+  position: relative;
+  overflow: hidden;
+}
+
+// i want rows
+.helicopter {
+  width: 80%;
+  height: 250px;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  perspective: 100rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.propeller {
+  height: 200px;
+}
+
+.blade {
+  margin-top: -20px;
+  width: 20rem;
+  height: 2rem; /* Reset height */
+  background-color: #000;
+}
+
+.resume {
+  animation: bladeAnim1 0.8s infinite linear;
+}
+
+.linkedin {
+  animation: bladeAnim2 0.8s infinite linear;
+}
+
+.instagram {
+  animation: bladeAnim3 0.8s infinite linear;
+}
+
+.snapchat {
+  animation: bladeAnim4 0.8s infinite linear;
+}
+
+.github {
+  animation: bladeAnim5 0.8s infinite linear;
+}
+
+@keyframes bladeAnim1 {
+  0% {
+    transform: rotateX(80deg) rotateZ(0);
+  }
+
+  100% {
+    transform: rotateX(80deg) rotateZ(360deg);
+  }
+}
+
+@keyframes bladeAnim2 {
+  0% {
+    transform: rotateX(80deg) rotateZ(324deg);
+  }
+  10.9% {
+    transform: rotateX(80deg) rotateZ(360deg);
+  }
+  11% {
+    transform: rotateX(80deg) rotateZ(0);
+  }
+  100% {
+    transform: rotateX(80deg) rotateZ(324deg);
+  }
+}
+
+@keyframes bladeAnim3 {
+  0% {
+    transform: rotateX(80deg) rotateZ(108deg);
+  }
+  70.9% {
+    transform: rotateX(80deg) rotateZ(360deg);
+  }
+  71% {
+    transform: rotateX(80deg) rotateZ(0);
+  }
+  100% {
+    transform: rotateX(80deg) rotateZ(108deg);
+  }
+}
+
+@keyframes bladeAnim4 {
+  0% {
+    transform: rotateX(80deg) rotateZ(180deg);
+  }
+  50.9% {
+    transform: rotateX(80deg) rotateZ(360deg);
+  }
+  51% {
+    transform: rotateX(80deg) rotateZ(0);
+  }
+  100% {
+    transform: rotateX(80deg) rotateZ(180deg);
+  }
+}
+
+@keyframes bladeAnim5 {
+  0% {
+    transform: rotateX(80deg) rotateZ(270deg);
+  }
+  24.9% {
+    transform: rotateX(80deg) rotateZ(360deg);
+  }
+  25% {
+    transform: rotateX(80deg) rotateZ(0);
+  }
+  100% {
+    transform: rotateX(80deg) rotateZ(270deg);
+  }
+}
+
+.mast {
+  width: 1rem;
+  height: 2rem;
+  margin-top: -9px;
+  background-color: #000;
+}
+
+.drone-body {
+  background-color: #b0cdef;
+  display: flex;
+  align-items: center;
+  width: 160px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 140px;
+  border-color: #000;
+  border-style: solid;
+  border-width: 7px;
+}
+
+.drone-body:hover {
+  background-color: #d8e5f4;
+  cursor: pointer;
+}
+
+.social-icon {
+  border-style: solid;
+  border-width: 4px;
+  border-radius: 6px;
+  margin-top: 30px;
+  min-height: 100px;
+  width: auto;
+  color: white;
+}
+
+.social-descr {
+  font-family: 'Playfair Display', serif;
+  color: rgb(114, 114, 114);
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.top-div {
+  z-index: 2;
+}
+
+// .oval-container {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 300px; /* Adjust container height */
+// }
+
+// .oval {
+//   width: 200px; /* Oval width */
+//   height: 100px; /* Oval height */
+//   border-radius: 50%;
+//   border: 1px solid #333; /* Border for the oval */
+//   position: relative;
+// }
+
+// .rod {
+//   width: 150px; /* Initial width of the rod */
+//   height: 8px; /* Height of the rod */
+//   background-color: #333; /* Color of the rod */
+//   position: absolute;
+//   left: 50%;
+//   bottom: 50%;
+//   transform-origin: center;
+//   animation: spin 4.5s linear infinite; /* Animation: spin continuously */
+// }
+
+// @keyframes spin {
+//   0% {
+//     transform: translate(-50%, -50%) rotate(0deg) scaleX(0.9); /* Scale the rod when horizontal */
+//   }
+//   5% {
+//     transform: translate(-50%, -50%) rotate(5deg) scaleX(0.65); /* Scale the rod when horizontal */
+//   }
+//   10% {
+//     transform: translate(-50%, -50%) rotate(10deg) scaleX(0.45); /* Scale the rod when horizontal */
+//   }
+//   15% {
+//     transform: translate(-50%, -50%) rotate(20deg) scaleX(0.38); /* Scale the rod when horizontal */
+//   }
+//   20% {
+//     transform: translate(-50%, -50%) rotate(35deg) scaleX(0.32); /* Scale the rod when horizontal */
+//   }
+//   25% {
+//     transform: translate(-50%, -50%) rotate(55deg) scaleX(0.3); /* Scale the rod when horizontal */
+//   }
+//   30% {
+//     transform: translate(-50%, -50%) rotate(75deg) scaleX(0.32); /* Scale the rod when horizontal */
+//   }
+//   35% {
+//     transform: translate(-50%, -50%) rotate(100deg) scaleX(0.38); /* Scale the rod when horizontal */
+//   }
+//   40% {
+//     transform: translate(-50%, -50%) rotate(125deg) scaleX(0.45); /* Scale the rod when horizontal */
+//   }
+//   45% {
+//     transform: translate(-50%, -50%) rotate(150deg) scaleX(0.65); /* Scale the rod when horizontal */
+//   }
+//   50% {
+//     transform: translate(-50%, -50%) rotate(180deg) scaleX(0.9); /* Scale the rod when horizontal */
+//   }
+//   55% {
+//     transform: translate(-50%, -50%) rotate(210deg) scaleX(0.65); /* Scale the rod when horizontal */
+//   }
+//   60% {
+//     transform: translate(-50%, -50%) rotate(235deg) scaleX(0.45); /* Scale the rod when horizontal */
+//   }
+//   65% {
+//     transform: translate(-50%, -50%) rotate(260deg) scaleX(0.38); /* Scale the rod when horizontal */
+//   }
+//   70% {
+//     transform: translate(-50%, -50%) rotate(285deg) scaleX(0.32); /* Scale the rod when horizontal */
+//   }
+//   75% {
+//     transform: translate(-50%, -50%) rotate(305deg) scaleX(0.3); /* Scale the rod when horizontal */
+//   }
+//   80% {
+//     transform: translate(-50%, -50%) rotate(325deg) scaleX(0.32); /* Scale the rod when horizontal */
+//   }
+//   85% {
+//     transform: translate(-50%, -50%) rotate(340deg) scaleX(0.38); /* Scale the rod when horizontal */
+//   }
+//   90% {
+//     transform: translate(-50%, -50%) rotate(350deg) scaleX(0.45); /* Scale the rod when horizontal */
+//   }
+//   95% {
+//     transform: translate(-50%, -50%) rotate(355deg) scaleX(0.65); /* Scale the rod when horizontal */
+//   }
+//   100% {
+//     transform: translate(-50%, -50%) rotate(360deg) scaleX(0.9); /* Scale the rod when horizontal */
+//   }
+// }
+
+@keyframes helicopterHover {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.helicopter.hover1 {
+  animation: helicopterHover 2s infinite ease-in-out 0s; /* Delay for first element */
+}
+
+.helicopter.hover2 {
+  animation: helicopterHover 2s infinite ease-in-out 0.4s; /* Delay for second element */
+}
+
+.helicopter.hover3 {
+  animation: helicopterHover 2s infinite ease-in-out 0.4s; /* Delay for third element */
+}
+
+.helicopter.hover4 {
+  animation: helicopterHover 2s infinite ease-in-out 0.4s; /* Delay for third element */
+}
+
+.helicopter.hover5 {
+  animation: helicopterHover 2s infinite ease-in-out 0.4s; /* Delay for third element */
+}
+
+.cloud-icon {
+  height: auto;
+  width: 130px;
+  position: absolute;
+  top: auto;
+  color: white;
+  position: absolute;
+  z-index: 1;
+}
+
+.additional {
+  z-index: 2;
+  color: black;
+}

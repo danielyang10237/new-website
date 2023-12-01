@@ -13,6 +13,10 @@ body[data-theme="dark"] {
    color: red;
   }
 
+  .header-overlay {
+  
+  }
+
   .header-icon {
     color: #3c342c;
     opacity: 0.8;
@@ -123,5 +127,17 @@ body[data-theme="dark"] {
   .animated-background-layer,
   .animated-background-layer-2 {
     display: none;
+  }
+
+  #SocalMedia {
+    background-color: #202020;
+  }
+  
+  .cloud-icon {
+    color: rgb(106, 106, 106);
+  }
+  
+  .additional {
+    color: rgb(255, 255, 255);
   }
 }

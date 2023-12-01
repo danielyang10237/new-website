@@ -56,22 +56,24 @@ class Header extends Component {
         const randomInt = Math.floor(Math.random() * 4);
         const icon = document.createElement("span");
         icon.className = "iconify moving-icon";
-        
+
         const iconsMap = {
-          0: 'ion:rocket-sharp',
-          1: 'bi:star-fill',
-          2: 'ri:moon-fill',
-          3: 'ri:planet-fill'
+          0: "ion:rocket-sharp",
+          1: "bi:star-fill",
+          2: "ri:moon-fill",
+          3: "ri:planet-fill",
         };
-  
-        icon.setAttribute('data-icon', iconsMap[randomInt]);
+
+        icon.setAttribute("data-icon", iconsMap[randomInt]);
         icon.style.color = "white";
         icon.style.opacity = 0.2;
 
         const iconContainerDimensions = iconContainer.getBoundingClientRect();
         const iconContainerWidth = iconContainerDimensions.width;
         const iconContainerHeight = iconContainerDimensions.height;
-        const x = Math.random() * (iconContainerWidth + iconContainerHeight) - iconContainerHeight;
+        const x =
+          Math.random() * (iconContainerWidth + iconContainerHeight) -
+          iconContainerHeight;
         const progress = Math.random();
         icon.style.left = `${x + progress * iconContainerWidth}px`;
         icon.style.top = `${(1 - progress) * iconContainerHeight}px`;
@@ -111,18 +113,21 @@ class Header extends Component {
     return (
       <header
         id="home"
+        className="center"
         style={{ height: window.innerHeight + 20, display: "block" }}
       >
-        <img
-          src={map}
-          alt="sliding background"
-          className="animated-background-layer"
-        ></img>
-        <img
-          src={map}
-          alt="sliding background 2"
-          className="animated-background-layer-2"
-        ></img>
+        <div className="header-overlay">
+          <img
+            src={map}
+            alt="sliding background"
+            className="animated-background-layer"
+          ></img>
+          <img
+            src={map}
+            alt="sliding background 2"
+            className="animated-background-layer-2"
+          ></img>
+        </div>
         <div id="icon-container" className="icon-container"></div>
         <div className="row aligner" style={{ height: "100%" }}>
           <div className="col-md-12">

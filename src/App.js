@@ -8,6 +8,7 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import PhotoGallery from "./components/PhotoGallery";
+import SocialMedia from "./components/SocialMedia";
 
 class App extends Component {
 
@@ -83,7 +84,7 @@ class App extends Component {
           resumeBasicInfo={this.state.resumeData.basic_info}
         />
         <PhotoGallery galleryPhotos={this.state.resumeData.gallery}/>
-        {/* Media & Resume */}
+        <SocialMedia />
         <Footer sharedBasicInfo={this.state.sharedData.basic_info} />
       </div>
     );
