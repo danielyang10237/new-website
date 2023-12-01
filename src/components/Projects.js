@@ -18,7 +18,6 @@ class Projects extends Component {
 
     const rows = [];
     let currentRow = [];
-    const projects = [];
 
     if (this.props.resumeProjects && this.props.resumeBasicInfo) {
       var sectionName = this.props.resumeBasicInfo.section_name.projects;

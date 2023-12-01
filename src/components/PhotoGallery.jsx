@@ -4,7 +4,6 @@ const PhotoGallery = (props) => {
   const screenRef = useRef(null);
   const [hexGrid, setHexGrid] = useState([]);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  let hexes = [];
 
   useEffect(() => {
     const handleResize = () => {
@@ -18,8 +17,10 @@ const PhotoGallery = (props) => {
   }, []);
 
   useEffect(() => {
+    let hexes = [];
+
     if (props.galleryPhotos && hexes.length === 0) {
-      let newHexes = props.galleryPhotos.map((gallery, index) => {
+      hexes = props.galleryPhotos.map((gallery, index) => {
         return (
           <div key={index} className="flip-container">
             <div className="flipper">
@@ -49,7 +50,6 @@ const PhotoGallery = (props) => {
           </div>
         );
       });
-      hexes = newHexes;
     }
 
     const hexagonWidth = 290; // Width of each hexagon in pixels
