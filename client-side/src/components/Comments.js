@@ -17,7 +17,7 @@ class Comments extends Component {
 
   updateComments = () => {
     axios
-      .get("http://localhost:8000/api/comments")
+      .get("https://portfolio-server-6xnq.onrender.com/api/comments")
       .then((response) => {
         let comments = response.data;
         comments.reverse();
@@ -47,7 +47,7 @@ class Comments extends Component {
     }
 
     axios
-      .post("http://localhost:8000/api/comments", {
+      .post("https://portfolio-server-6xnq.onrender.com/api/comments", {
         name: this.state.name,
         text: this.state.comment,
         time: timePosted,
