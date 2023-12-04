@@ -16,9 +16,9 @@ class Footer extends Component {
 
     return (
       <footer>
-        <div className="col-md-12">
+        <div className="col-sm-12 col-md-12 col-lg-12">
           <div className="copyright py-4 text-center">
-            <div className="container center">
+            <div className="container center col-sm-12 col-md-12 col-lg-12">
               <small>
                 Copyright &copy;{" "}
                 {this.props.sharedBasicInfo
