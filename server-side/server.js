@@ -48,7 +48,7 @@ app.get("/api/comments", async (req, res) => {
   console.log("get comments");
   try {
     const comments = await commentList.find().toArray();
-    console.log(comments);
+    // console.log(comments);
     res.json(comments);
   } catch (error) {
     console.error("Error fetching comments:", error);
