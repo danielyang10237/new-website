@@ -1,0 +1,229 @@
+{
+    "basic_info": {
+      "description_header": "Hello Visitors",
+      "description": "👋 I'm Daniel Yang, a current student at Stanford pursuing two degrees in Computer Science and Statistics. I'm interested in web design 🌐, deep learning 🧠, geography 🗺️, and marine ecology 🦈. Currently looking for cool summer 2024 opportunities in tech!",
+      "section_name": {
+        "about": "A little about me",
+        "projects": "Projects",
+        "skills": "Skills",
+        "experience": "Experience"
+      }
+    },
+    "gallery": [
+      {
+        "image": "images/gallery/photo1.png",
+        "date": "February 2020",
+        "location": "Austin, TX",
+        "description": "Quarantine Daniel"
+      },
+      {
+        "image": "images/gallery/photo3.png",
+        "date": "May 2022",
+        "location": "Austin, TX",
+        "description": "UT Admit Weekend"
+      },
+      {
+        "image": "images/gallery/photo4.png",
+        "date": "June 2022",
+        "location": "Austin, TX",
+        "description": "Wake Surfing Austin"
+      },
+      {
+        "image": "images/gallery/photo5.png",
+        "date": "April 2022",
+        "location": "Half Moon Bay, CA",
+        "description": "Beach Brawl"
+      },
+      {
+        "image": "images/gallery/photo6.png",
+        "date": "June 2023",
+        "location": "Monterey Bay, CA",
+        "description": "Snorkeling with Kelp"
+      },
+      {
+        "image": "images/gallery/photo7.png",
+        "date": "July 2023",
+        "location": "Palo Alto, CA",
+        "description": "DJ Session"
+      },
+      {
+        "image": "images/gallery/photo8.png",
+        "date": "August 2023",
+        "location": "Pacific Grove, CA",
+        "description": "Kayaking the Coast"
+      },
+      {
+        "image": "images/gallery/photo9.png",
+        "date": "August 2023",
+        "location": "Santa Cruz, CA",
+        "description": "Hidden Cafe Gem"
+      },
+      {
+        "image": "images/gallery/photo10.png",
+        "date": "September 2023",
+        "location": "San Jose, CA",
+        "description": "Haunted House Horrors"
+      },
+      {
+        "image": "images/gallery/photo11.png",
+        "date": "September 2023",
+        "location": "Palo Alto, CA",
+        "description": "Main Quad Hide & Seek"
+      },
+      {
+        "image": "images/gallery/photo12.png",
+        "date": "October 2023",
+        "location": "Palo Alto, CA",
+        "description": "Halloween Festivities"
+      },
+      {
+        "image": "images/gallery/photo13.png",
+        "date": "November 2023",
+        "location": "Palo Alto, CA",
+        "description": "Straight Hair Experiment"
+      },
+      {
+        "image": "images/gallery/photo14.png",
+        "date": "November 2023",
+        "location": "Palo Alto, CA",
+        "description": "Friends On Ice"
+      }
+    ],
+    "projects": [
+      {
+        "title": "Former Website",
+        "startDate": "2023",
+        "description": "Former public personal website coded from scratch without utilizing a template. The website front end is done with Vanilla Javascript development without the use of modern front-end frameworks like React. The decision to not utilize React, Angular, or Vue was made to deepen my understanding of the inner workings and fundamentals of web development. The back-end server is set up using nodejs and express that connects to a mongoDB for storage. The mongoDB is deployed with Mongo Atlas and the rest with Render. My github contains a public repo with the project code",
+        "images": [
+          "images/portfolio/first-website/p1.jpg",
+          "images/portfolio/first-website/p1.png",
+          "images/portfolio/first-website/p2.png"
+        ],
+        "url": "https://personal-website-4dwv.onrender.com",
+        "technologies": [
+        ]
+      },
+      {
+        "title": "ML for Maintenance",
+        "startDate": "2023",
+        "description": "This project was done for the United States Naval Sea Systems Commands. We attempt to utilize vast quantities of aggregated data from current sensors aboard marine ships to proactively predict machine failure. An ensemble of supervised and unsupervised learning techniques were used to create a data model which accurately predicts anomalies and deviations in machine performance aboard active ships",
+        "images": [
+          "images/portfolio/naval/p1.jpg",
+          "images/portfolio/naval/p2.webp",
+          "images/portfolio/naval/p3.jpg"
+        ],
+        "url": "",
+        "file": "images/portfolio/naval/NAVSEA.pdf",
+        "technologies": [
+        ]
+      },
+      {
+        "title": "Argument Speech Classification",
+        "startDate": "2022",
+        "description": "Through an ensembling of BERT and GloVe with RidgeRegression, our project experimentations were able to accurately classify the human value categories that an argument draws on. Arguments consist of a premise, conclusion, and the premise’s stance on the conclusion.",
+        "images": [
+          "images/portfolio/speech/p1.jpg"
+        ],
+        "file": "images/portfolio/speech/semeval.pdf",
+        "technologies": [
+        ]
+      },
+      {
+        "title": "Access Forum Initiative",
+        "startDate": "2021",
+        "description": "Founded nonprofit aimed to promote speech and debate among younger students. Through summer camps, tournaments, fundraisers, and workshops, we have delivered over 300 hours of instructional hours to over 400 students and raised over 5k for new speech & debate teams!",
+        "images": [
+          "images/portfolio/AFI/AFI-cover.png",
+          "images/portfolio/AFI/AFI2.png",
+          "images/portfolio/AFI/AFI.jpg"
+        ],
+        "url": "https://www.accessforuminitiative.com/",
+        "technologies": [
+        ]
+      },
+      {
+        "title": "Chaps Hurricane Relief",
+        "startDate": "2021",
+        "description": "Founded nonprofit towards hurricane relief efforts along coastal Texas. Through a series of fundraisers, we were able to raise over 10k towards hurricane relief efforts and deliver over 2000 care packages of food and supplies to those in need!",
+        "images": [
+          "images/portfolio/hurricane/hur5.png",
+          "images/portfolio/hurricane/hur1.JPG"
+        ],
+        "url": "",
+        "technologies": [
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Lasso Solutions",
+        "title": "Full Stack Developer Intern",
+        "years": "06.2023 - 09.2023",
+        "mainTech": [
+          "San Francisco, CA"
+        ],
+        "technologies": [
+          "REST API",
+          "React",
+          "JavaScript",
+          "Bootstrap",
+          "HTML/CSS",
+          "Python",
+          "NodeJS",
+          "Django",
+          "OAuth 2.0",
+          "AWS Lambdas",
+          "MySQL",
+          "HTTP/HTTPS"
+        ]
+      },
+      {
+        "company": "Naval Sea Systems Command",
+        "title": "Data Science Project Intern",
+        "years": "02.2023 - 09.2023",
+        "mainTech": [
+          "Remote"
+        ],
+        "technologies": [
+          "Machine learning",
+          "Python",
+          "Pytorch",
+          "Pandas",
+          "Sklearn",
+          "Data visualization"
+        ]
+      },
+      {
+        "company": "Department of Fish and Wildlife",
+        "title": "Software and Data Engineer",
+        "years": "11.2022 - 02.2023",
+        "mainTech": [
+          "Palo Alto, CA"
+        ],
+        "technologies": [
+          "Machine learning",
+          "Python",
+          "Data cleansing",
+          "Data augmentation",
+          "Data model architecture",
+          "Flask"
+        ]
+      },
+      {
+        "company": "Association For Computing Machinery",
+        "title": "Machine Learning Researcher",
+        "years": "11.2022 - 02.2023",
+        "mainTech": [
+          "Stanford, CA"
+        ],
+        "technologies": [
+          "Machine learning",
+          "Pytorch",
+          "BERT model",
+          "GloVe word embeddings",
+          "Text preprocessing",
+          "Logistic regression"
+        ]
+      }
+    ]
+  }

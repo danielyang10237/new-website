@@ -1,0 +1,24 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/client-side/node_modules
+/server-side/node_modules
+/client-side/.pnp
+/client-side.pnp.js
+
+# testing
+/client-side/coverage
+
+# production
+/client-side/build
+
+# misc
+/client-side.DS_Store
+/client-side.env.local
+/client-side.env.development.local
+/client-side.env.test.local
+/client-side.env.production.local
+
+/client-sidenpm-debug.log*
+/client-sideyarn-debug.log*
+/client-sideyarn-error.log*
