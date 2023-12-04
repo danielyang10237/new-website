@@ -80,11 +80,11 @@ class Comments extends Component {
         </div>
         <div className="container">
           <form
-            className="comment-form col-sm-9 col-md-7 col-lg-5 comment-header-container"
+            className="comment-form col-sm-12 col-md-12 col-lg-12 comment-header-container"
             onSubmit={this.handleSubmit}
           >
             <div className="comment-form-text">
-              <p className="flex-grow">Display Name</p>
+              <p className="">Display Name</p>
               <input
                 className="comment-form-field-name"
                 type="text"
@@ -94,7 +94,7 @@ class Comments extends Component {
               />
             </div>
             <div className="comment-form-text">
-              <p className="flex-grow">Message</p>
+              <p className="">Message</p>
               <input
                 className="comment-form-field-message"
                 type="text"
@@ -104,12 +104,12 @@ class Comments extends Component {
               />
             </div>
             <input
-              className="flex-grow comment-form-submit"
+              className=" comment-form-submit"
               type="submit"
               value="Post"
             />
           </form>
-        </div>
+        </div> 
         <div className="comment-list col-sm-12 col-md-10 col-lg-8">
           {this.state.comments.map((comment, index) => (
             <div className="comment" key={index}>

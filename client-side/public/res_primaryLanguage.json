@@ -87,6 +87,24 @@
         "date": "November 2023",
         "location": "Palo Alto, CA",
         "description": "Friends On Ice"
+      },
+      {
+        "image": "images/gallery/photo15.png",
+        "date": "August 2022",
+        "location": "Austin, TX",
+        "description": "Public Plunge"
+      },
+      {
+        "image": "images/gallery/photo16.png",
+        "date": "November 2022",
+        "location": "Palo Alto, CA",
+        "description": "Robbed a Toy Store"
+      },
+      {
+        "image": "images/gallery/photo17.png",
+        "date": "October 2022",
+        "location": "Palo Alto, CA",
+        "description": "Red Riding Hoods"
       }
     ],
     "projects": [
