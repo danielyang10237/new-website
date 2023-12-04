@@ -78,7 +78,7 @@ class Comments extends Component {
             </span>
           </h1>
         </div>
-        <div className="container">
+        <div className="container col-sm-12 col-md-12 col-lg-12 center">
           <form
             className="comment-form col-sm-12 col-md-12 col-lg-12 comment-header-container"
             onSubmit={this.handleSubmit}
