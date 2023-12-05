@@ -134,7 +134,7 @@ class Header extends Component {
             <div>
               <span
                 className="iconify header-icon"
-                data-icon="la:laptop-code"
+                data-icon="game-icons:sea-turtle"
                 data-inline="false"
               ></span>
               <br />
@@ -155,7 +155,7 @@ class Header extends Component {
                 uncheckedIcon={
                   <span
                     className="iconify"
-                    data-icon="twemoji:owl"
+                    data-icon="game-icons:night-sky"
                     data-inline="false"
                     style={{
                       display: "block",
@@ -170,15 +170,15 @@ class Header extends Component {
                 checkedIcon={
                   <span
                     className="iconify"
-                    data-icon="noto-v1:sun-with-face"
+                    data-icon="wi:day-fog"
                     data-inline="false"
                     style={{
+                      color: "#baaa80",
                       display: "block",
                       height: "100%",
                       fontSize: 25,
                       textAlign: "end",
                       marginLeft: "10px",
-                      color: "#353239",
                     }}
                   ></span>
                 }

@@ -54,34 +54,35 @@ const PhotoGallery = (props) => {
 
     const hexagonWidth = 290; // Width of each hexagon in pixels
     // console.log("windowWidth", windowWidth);
-    const hexGridWidth = windowWidth - 100; // Width of the hex grid in pixels
+    const hexGridWidth = windowWidth - 150; // Width of the hex grid in pixels
     const numColsOdd = Math.floor(hexGridWidth / hexagonWidth);
-    // console.log("numCols", numCols);
-    const numColsEven = Math.floor((hexGridWidth - 145) / hexagonWidth);
+    // console.log("numColsOdd", numColsOdd);
+    const numColsEven = Math.floor((hexGridWidth + 145) / hexagonWidth);
+    // console.log("numCols", numColsEven);
     if (numColsEven < 1) {
+      setHexGrid(hexes);
       return;
     }
-    const minCols = Math.min(numColsOdd, numColsEven);
-    let numRows = Math.ceil(hexes.length / minCols);
 
+    let len = hexes.length;
+    let row_index = 0
     let updatedHexGrid = [];
 
-    for (let i = 0; i < numRows; i++) {
+    while (len > Math.min(numColsOdd, numColsEven)) {
+      let row_count = 0
+      if (row_index % 2 === 0) {
+        row_count = numColsOdd;
+      } else {
+        row_count = numColsEven;
+      }
       updatedHexGrid.push([]);
+      for (let i = 0; i < row_count; i++) {
+        updatedHexGrid[row_index].push(hexes.pop());
+      }
+      len -= row_count;
+      row_index++;
     }
 
-    let n = hexes.length - 1;
-    let count = 0;
-    while (n >= 0) {
-      let limit = count % 2 === 0 ? numColsOdd : numColsEven;
-      if (updatedHexGrid[count % numRows].length === limit) {
-        count++;
-        continue;
-      }
-      updatedHexGrid[count % numRows].push(hexes.pop());
-      n--;
-      count++;
-    }
     setHexGrid(updatedHexGrid);
   }, [windowWidth, props.galleryPhotos]);
 
