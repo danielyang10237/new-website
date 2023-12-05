@@ -4,8 +4,7 @@ const { MongoClient } = require("mongodb");
 
 const app = express();
 const PORT = 8000;
-const uri =
-  "mongodb+srv://dy92634:vAwmin-weqrov-pidsa2@websitecomments.kmsvtiw.mongodb.net/?retryWrites=true&w=majority";
+export const mongo_uri = process.env["MONGO_URI"];
 const database_name = "personal_website";
 
 let commentList;
