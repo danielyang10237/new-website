@@ -102,9 +102,27 @@
       },
       {
         "image": "images/gallery/photo17.png",
-        "date": "October 2022",
+        "date": "March 2023",
+        "location": "Pacific Ocean",
+        "description": "Boating Formal"
+      },
+      {
+        "image": "images/gallery/photo18.png",
+        "date": "May 2021",
+        "location": "Round Rock, TX",
+        "description": "Paint the Town"
+      },
+      {
+        "image": "images/gallery/photo19.png",
+        "date": "August 2023",
+        "location": "Mountain View, CA",
+        "description": "I'm a Barbie"
+      },
+      {
+        "image": "images/gallery/photo20.png",
+        "date": "April 2023",
         "location": "Palo Alto, CA",
-        "description": "Red Riding Hoods"
+        "description": "Peak Productivity"
       }
     ],
     "projects": [
