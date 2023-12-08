@@ -11,7 +11,7 @@ let commentList;
 
 async function connectToDatabase() {
   try {
-    const client = new MongoClient(uri, {
+    const client = new MongoClient(module.exports.mongo_uri, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
