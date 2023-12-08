@@ -4,7 +4,7 @@ const { MongoClient } = require("mongodb");
 
 const app = express();
 const PORT = 8000;
-export const mongo_uri = process.env["MONGO_URI"];
+module.exports.mongo_uri = process.env["MONGO_URI"];
 const database_name = "personal_website";
 
 let commentList;
