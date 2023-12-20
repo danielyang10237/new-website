@@ -91,7 +91,7 @@ const SocialMedia = () => {
           </h1>
         </div>
         <div className="col-md-12 center">
-          <div className="top-div col-md-12 row row-cols-1 row-cols-md-3 row-cols-lg-5">
+          <div className="top-div col-md-12 row row-cols-1 row-cols-md-2 row-cols-lg-4">
             <div className="social-section">
               <div className="helicopter hover1" onClick={handleResumeClick}>
                 <div className="blade resume">
@@ -140,7 +140,7 @@ const SocialMedia = () => {
                 </div>
               </div>
             </div>
-            <div className="social-section">
+            {/* <div className="social-section">
               <div className="helicopter hover4" onClick={handleSnapchatClick}>
                 <div className="blade snapchat">
                   <div className="main-rotor"></div>
@@ -155,7 +155,7 @@ const SocialMedia = () => {
                   <h3 className="social-descr">Snapchat</h3>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="social-section">
               <div className="helicopter hover5" onClick={handleGithubClick}>
                 <div className="blade github">
