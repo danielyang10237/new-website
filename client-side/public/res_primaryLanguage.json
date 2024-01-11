@@ -120,12 +120,24 @@
       },
       {
         "image": "images/gallery/photo20.png",
-        "date": "April 2023",
-        "location": "Palo Alto, CA",
-        "description": "Peak Productivity"
+        "date": "December 2023",
+        "location": "Tahoe City, CA",
+        "description": "Just peaked"
       }
     ],
     "projects": [
+      {
+        "title": "24 Online Multiplayer",
+        "startDate": "2023",
+        "description": "Coded a full stack application for an online multiplayer game revolving around the 24 math puzzle. Race your friends to see who is faster. A websocket server is utilized to provide fast real time updates to all connected players. My github contains a public repo with the project code",
+        "images": [
+          "images/portfolio/online24/title1.png",
+          "images/portfolio/online24/gameboard.png"
+        ],
+        "url": "https://24game.xyz",
+        "technologies": [
+        ]
+      },
       {
         "title": "Former Website",
         "startDate": "2023",
