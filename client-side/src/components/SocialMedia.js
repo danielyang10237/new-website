@@ -71,10 +71,6 @@ const handleInstagramClick = () => {
   );
 };
 
-const handleSnapchatClick = () => {
-  window.open("https://t.snapchat.com/HdABqwjV", "_blank");
-};
-
 const handleGithubClick = () => {
   window.open("https://github.com/danielyang10237", "_blank");
 };
@@ -91,7 +87,7 @@ const SocialMedia = () => {
           </h1>
         </div>
         <div className="col-md-12 center">
-          <div className="top-div col-md-12 row row-cols-1 row-cols-md-3 row-cols-lg-5">
+          <div className="top-div col-md-12 row row-cols-1 row-cols-md-2 row-cols-lg-4">
             <div className="social-section">
               <div className="helicopter hover1" onClick={handleResumeClick}>
                 <div className="blade resume">
@@ -137,22 +133,6 @@ const SocialMedia = () => {
                     data-inline="false"
                   ></span>
                   <h3 className="social-descr">Instagram</h3>
-                </div>
-              </div>
-            </div>
-            <div className="social-section">
-              <div className="helicopter hover4" onClick={handleSnapchatClick}>
-                <div className="blade snapchat">
-                  <div className="main-rotor"></div>
-                </div>
-                <div className="mast"></div>
-                <div className="drone-body">
-                  <span
-                    className="iconify social-icon"
-                    data-icon="la-snapchat"
-                    data-inline="false"
-                  ></span>
-                  <h3 className="social-descr">Snapchat</h3>
                 </div>
               </div>
             </div>
