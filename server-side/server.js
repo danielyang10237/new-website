@@ -4,14 +4,14 @@ const { MongoClient } = require("mongodb");
 
 const app = express();
 const PORT = 8000;
-export const mongo_uri = process.env["MONGO_URI"];
+module.exports.mongo_uri = process.env["MONGO_URI"];
 const database_name = "personal_website";
 
 let commentList;
 
 async function connectToDatabase() {
   try {
-    const client = new MongoClient(uri, {
+    const client = new MongoClient(module.exports.mongo_uri, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
