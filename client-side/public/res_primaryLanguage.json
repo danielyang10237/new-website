@@ -127,6 +127,30 @@
     ],
     "projects": [
       {
+        "title": "Live Sign Language Interpreter",
+        "startDate": "2024",
+        "description": "Engineered and trained computer vision machine learning model to recognize American Sign Language letters and basic vocabulary words. Fit the model to live video feed, enabling real time fast interpretation of sign languge. Addressed major challenges for live interpretation detailed in research paper.",
+        "images": [
+          "images/portfolio/asl/alphabet.png",
+          "images/portfolio/asl/vivitgram.png"
+        ],
+        "file": "images/portfolio/asl/asl_interpreter.pdf",
+        "technologies": [
+        ]
+      },
+      {
+        "title": "Language Difficulty Paraphrase Bot",
+        "startDate": "2024",
+        "description": "Engineered and finetuned NLP model with custom generation and loss functions to develop a difficulty paraphrasing bot. Trained with the GPT2 architecture, the model is able to turn input sentences into either more complex or simpler versions of itself. Results and methodology detailed in the research paper.",
+        "images": [
+          "images/portfolio/nlp/nlp.jpg",
+          "images/portfolio/nlp/gpt2.png"
+        ],
+        "file": "images/portfolio/nlp/CTG_final.pdf",
+        "technologies": [
+        ]
+      },
+      {
         "title": "24 Online Multiplayer",
         "startDate": "2023",
         "description": "Coded a full stack application for an online multiplayer game revolving around the 24 math puzzle. Race your friends to see who is faster. A websocket server is utilized to provide fast real time updates to all connected players. My github contains a public repo with the project code",

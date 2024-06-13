@@ -55,7 +55,7 @@
         },
         {
           "name": "R",
-          "class": "devicon-r-original",
+          "class": "devicon-rstudio-plain",
           "level": "65"
         },
         {
@@ -100,12 +100,12 @@
         },
         {
           "name": "Pandas",
-          "class": "devicon-pandas-original",
+          "class": "devicon-pandas-plain",
           "level": "52"
         },
         {
           "name": "Numpy",
-          "class": "devicon-numpy-original",
+          "class": "devicon-numpy-plain",
           "level": "51"
         },
         {

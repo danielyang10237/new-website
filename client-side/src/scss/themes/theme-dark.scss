@@ -133,6 +133,24 @@ body[data-theme="dark"] {
     background-color: #202020;
   }
   
+  .blade {
+    background-color: white;
+  }
+
+  .mast {
+    background-color: white;
+  }
+
+  .drone-body {
+    border-color: white;
+  }
+
+  .project-container {
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+  }
+
   .cloud-icon {
     color: rgb(106, 106, 106);
   }
