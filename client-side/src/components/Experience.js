@@ -7,10 +7,13 @@ import "react-vertical-timeline-component/style.min.css";
 import Badge from "react-bootstrap/Badge";
 
 const experienceDict = {
-  0: "fa-solid fa-cow",
-  1: "fa-solid fa-ship",
-  2: "fa-solid fa-dove",
-  3: "fa-solid fa-comments",
+  0: "fa-solid fa-wand-magic",
+  1: "fa-solid fa-paper-plane",
+  2: "fa-solid fa-laptop",
+  3: "fa-solid fa-cow",
+  4: "fa-solid fa-ship",
+  5: "fa-solid fa-dove",
+  6: "fa-solid fa-comments",
 };
 
 class Experience extends Component {

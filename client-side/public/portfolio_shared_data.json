@@ -112,6 +112,81 @@
           "name": "Matlab",
           "class": "devicon-matlab-plain",
           "level": "9"
+        },
+        {
+          "name": "Azure",
+          "class": "devicon-azure-plain",
+          "level": "91"
+        },
+        {
+          "name": "Docker",
+          "class": "devicon-docker-plain",
+          "level": "92"
+        },
+        {
+          "name": "Confluence",
+          "class": "devicon-confluence-plain",
+          "level": "9"
+        },
+        {
+          "name": "Django",
+          "class": "devicon-django-plain",
+          "level": "15"
+        },
+        {
+          "name": "DynamoDB",
+          "class": "devicon-dynamodb-plain",
+          "level": "15"
+        },
+        {
+          "name": "MongoDB",
+          "class": "devicon-mongodb-plain",
+          "level": "15"
+        },
+        {
+          "name": "Figma",
+          "class": "devicon-figma-plain",
+          "level": "15"
+        },
+        {
+          "name": "Git",
+          "class": "devicon-git-plain",
+          "level": "15"
+        },
+        {
+          "name": "Jira",
+          "class": "devicon-jira-plain",
+          "level": "15"
+        },
+        {
+          "name": "Kotlin",
+          "class": "devicon-kotlin-plain",
+          "level": "1"
+        },
+        {
+          "name": "Kubernetes",
+          "class": "devicon-kubernetes-plain",
+          "level": "15"
+        },
+        {
+          "name": "Linux",
+          "class": "devicon-linux-plain",
+          "level": "15"
+        },
+        {
+          "name": "Nginx",
+          "class": "devicon-nginx-plain",
+          "level": "15"
+        },
+        {
+          "name": "Postman",
+          "class": "devicon-postman-plain",
+          "level": "15"
+        },
+        {
+          "name": "React",
+          "class": "devicon-react-plain",
+          "level": "15"
         }
       ]
     }

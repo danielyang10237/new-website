@@ -124,15 +124,56 @@
         "location": "Tahoe City, CA",
         "description": "Just peaked"
       }
+      ,
+      {
+        "image": "images/gallery/photo21.png",
+        "date": "November 2024",
+        "location": "Stanford, CA",
+        "description": "Swinging the Blues"
+      }
+      ,
+      {
+        "image": "images/gallery/photo23.png",
+        "date": "March 2024",
+        "location": "Stanford, CA",
+        "description": "Work work work work work"
+      }
     ],
     "projects": [
+      {
+        "title": "Airline Fare Predictions",
+        "startDate": "2024",
+        "description": "Worked with two other students to design a competitve pricing machine learning model for airline flights. We represented airports and flights as nodes and edges of a graph before training several machine learning models to efficiently label the competitive prices for these flights through new graph neural network designs.",
+        "images": [
+          "images/portfolio/airline/hur5.jpg",
+          "images/portfolio/airline/air1.png",
+          "images/portfolio/airline/air2.png"
+        ],
+        "url": "https://medium.com/stanford-cs224w/temporal-analysis-in-densely-connected-graphs-1c8a3409bf9d",
+        "technologies": [
+        ]
+      },
+      {
+        "title": "Medical Diagnosis Model",
+        "startDate": "2024",
+        "description": "Using nested reinforcement learning algorithms, my team and I developed a decision making model capable of delivering accurate medical diagnosis from a given set of symptoms. After training the model with Q learning, the model asks a series of yes/no questions from a set of predetermined symptoms until its confident enough to make a diagnosis.",
+        "images": [
+          "images/portfolio/medical/medical1.png",
+          "images/portfolio/medical/med1.png",
+          "images/portfolio/medical/med2.png"
+        ],
+        "file": "images/portfolio/medical/cs238.pdf",
+        "technologies": [
+        ]
+      },
       {
         "title": "Live Sign Language Interpreter",
         "startDate": "2024",
         "description": "Engineered and trained computer vision machine learning model to recognize American Sign Language letters and basic vocabulary words. Fit the model to live video feed, enabling real time fast interpretation of sign languge. Addressed major challenges for live interpretation detailed in research paper.",
         "images": [
           "images/portfolio/asl/alphabet.png",
-          "images/portfolio/asl/vivitgram.png"
+          "images/portfolio/asl/vivitgram.png",
+          "images/portfolio/asl/hand.png"
         ],
         "file": "images/portfolio/asl/asl_interpreter.pdf",
         "technologies": [
@@ -143,7 +184,7 @@
         "startDate": "2024",
         "description": "Engineered and finetuned NLP model with custom generation and loss functions to develop a difficulty paraphrasing bot. Trained with the GPT2 architecture, the model is able to turn input sentences into either more complex or simpler versions of itself. Results and methodology detailed in the research paper.",
         "images": [
-          "images/portfolio/nlp/nlp.jpg",
+          "images/portfolio/nlp/face.png",
           "images/portfolio/nlp/gpt2.png"
         ],
         "file": "images/portfolio/nlp/CTG_final.pdf",
@@ -155,6 +196,7 @@
         "startDate": "2023",
         "description": "Coded a full stack application for an online multiplayer game revolving around the 24 math puzzle. Race your friends to see who is faster. A websocket server is utilized to provide fast real time updates to all connected players. My github contains a public repo with the project code",
         "images": [
+          "images/portfolio/online24/numbers.png",
           "images/portfolio/online24/title1.png",
           "images/portfolio/online24/gameboard.png"
         ],
@@ -167,7 +209,7 @@
         "startDate": "2023",
         "description": "Former public personal website coded from scratch without utilizing a template. The website front end is done with Vanilla Javascript development without the use of modern front-end frameworks like React. The decision to not utilize React, Angular, or Vue was made to deepen my understanding of the inner workings and fundamentals of web development. The back-end server is set up using nodejs and express that connects to a mongoDB for storage. The mongoDB is deployed with Mongo Atlas and the rest with Render. My github contains a public repo with the project code",
         "images": [
-          "images/portfolio/first-website/p1.jpg",
+          "images/portfolio/first-website/p4.png",
           "images/portfolio/first-website/p1.png",
           "images/portfolio/first-website/p2.png"
         ],
@@ -194,39 +236,67 @@
         "startDate": "2022",
         "description": "Through an ensembling of BERT and GloVe with RidgeRegression, our project experimentations were able to accurately classify the human value categories that an argument draws on. Arguments consist of a premise, conclusion, and the premise’s stance on the conclusion.",
         "images": [
+          "images/portfolio/speech/p2.png",
           "images/portfolio/speech/p1.jpg"
         ],
         "file": "images/portfolio/speech/semeval.pdf",
         "technologies": [
         ]
-      },
-      {
-        "title": "Access Forum Initiative",
-        "startDate": "2021",
-        "description": "Founded nonprofit aimed to promote speech and debate among younger students. Through summer camps, tournaments, fundraisers, and workshops, we have delivered over 300 hours of instructional hours to over 400 students and raised over 5k for new speech & debate teams!",
-        "images": [
-          "images/portfolio/AFI/AFI-cover.png",
-          "images/portfolio/AFI/AFI2.png",
-          "images/portfolio/AFI/AFI.jpg"
-        ],
-        "url": "https://www.accessforuminitiative.com/",
-        "technologies": [
-        ]
-      },
-      {
-        "title": "Chaps Hurricane Relief",
-        "startDate": "2021",
-        "description": "Founded nonprofit towards hurricane relief efforts along coastal Texas. Through a series of fundraisers, we were able to raise over 10k towards hurricane relief efforts and deliver over 2000 care packages of food and supplies to those in need!",
-        "images": [
-          "images/portfolio/hurricane/hur5.png",
-          "images/portfolio/hurricane/hur1.JPG"
-        ],
-        "url": "",
-        "technologies": [
-        ]
       }
     ],
     "experience": [
+      {
+        "company": "Stanford Translational AI Laboratory",
+        "title": "Full Stack Developer Intern",
+        "years": "10.2024 - PRESENT",
+        "mainTech": [
+          "Stanford, CA"
+        ],
+        "technologies": [
+          "Pytorch",
+          "Machine Learning",
+          "NLP",
+          "Containerization",
+          "Docker",
+          "CUDA"
+        ]
+      },
+      {
+        "company": "Palantir",
+        "title": "Winter Fellowship",
+        "years": "12.2024 - 01.2025",
+        "mainTech": [
+          "Washington DC, USA"
+        ],
+        "technologies": [
+          "Foundry",
+          "Pandas",
+          "Numpy",
+          "Machine Learning",
+          "Computer Vision",
+          "Data Cleaning"
+        ]
+      },
+      {
+        "company": "Hewlett Packard (HP)",
+        "title": "Software Engineer Intern",
+        "years": "06.2024 - 09.2024",
+        "mainTech": [
+          "Austin, TX"
+        ],
+        "technologies": [
+          "C++",
+          "Pytorch",
+          "Computer Vision",
+          "Computer Networks",
+          "Distributed Systems",
+          "Nginx",
+          "Azure",
+          "SQL",
+          "Jira",
+          "Optimizations"
+        ]
+      },
       {
         "company": "Lasso Solutions",
         "title": "Full Stack Developer Intern",
