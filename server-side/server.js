@@ -1,38 +1,44 @@
-const express = require("express");
-const cors = require("cors");
-const { MongoClient } = require("mongodb");
+import express from "express";
+import cors from "cors";
+import { MongoClient, ServerApiVersion } from "mongodb";
+import dotenv from "dotenv";
+dotenv.config();
 
 const app = express();
 const PORT = 8000;
-export const mongo_uri = process.env["MONGO_URI"];
+
+export const mongo_uri = process.env.MONGO_URI;
 const database_name = "personal_website";
 
 let commentList;
 
 async function connectToDatabase() {
   try {
-    const client = new MongoClient(uri, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
+    if (!mongo_uri) {
+      console.error("MONGO_URI environment variable is not set");
+      return;
+    }
+
+    const client = new MongoClient(mongo_uri, {
+      serverApi: {
+        version: ServerApiVersion.v1,
+        strict: true,
+        deprecationErrors: true,
+      }
     });
 
     await client.connect();
-    console.log("Connected to MongoDB");
+    console.log("Connected to MongoDB successfully");
 
     const database = client.db(database_name);
-
-    let collectionNames = await database.listCollections().toArray();
-
-    // console.log("collection names", collectionNames);
+    const collectionNames = await database.listCollections().toArray();
 
     if (!collectionNames.some((coll) => coll.name === "comments")) {
-      console.log("Creating collection");
       await database.createCollection("comments");
     }
 
     commentList = database.collection("comments");
   } catch (error) {
-    console.error("Error connecting to database:", error);
   }
 }
 
@@ -44,13 +50,11 @@ app.get("/api", (req, res) => {
 });
 
 app.get("/api/comments", async (req, res) => {
-  console.log("get comments");
+  console.log("➡️ GET /api/comments");
   try {
     const comments = await commentList.find().toArray();
-    // console.log(comments);
     res.json(comments);
   } catch (error) {
-    console.error("Error fetching comments:", error);
     res.status(500).json({ error: "Error fetching comments" });
   }
 });
@@ -58,29 +62,26 @@ app.get("/api/comments", async (req, res) => {
 app.post("/api/comments", async (req, res) => {
   try {
     const { name, text } = req.body;
-
-    const timePosted = new Date();
     const newComment = {
       username: name,
-      text: text,
-      time: timePosted,
+      text,
+      time: new Date(),
     };
 
     await commentList.insertOne(newComment);
     res.json({ success: true });
   } catch (error) {
-    console.error("Error adding comment:", error);
     res.status(500).json({ error: "Error adding comment" });
   }
 });
 
 app.all("/api/*", (req, res) => {
-  res
-    .status(404)
-    .json({ error: `Endpoint not found: ${req.method} ${req.url}` });
+  res.status(404).json({
+    error: `Endpoint not found: ${req.method} ${req.url}`,
+  });
 });
 
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+  console.log(`Server running on http://localhost:${PORT}`);
   connectToDatabase();
 });
