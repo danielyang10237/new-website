@@ -5,21 +5,22 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const app = express();
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 
 export const mongo_uri = process.env.MONGO_URI;
 const database_name = "personal_website";
 
 let commentList;
+let client;
 
 async function connectToDatabase() {
   try {
     if (!mongo_uri) {
       console.error("MONGO_URI environment variable is not set");
-      return;
+      return false;
     }
 
-    const client = new MongoClient(mongo_uri, {
+    client = new MongoClient(mongo_uri, {
       serverApi: {
         version: ServerApiVersion.v1,
         strict: true,
@@ -38,7 +39,10 @@ async function connectToDatabase() {
     }
 
     commentList = database.collection("comments");
+    return true;
   } catch (error) {
+    console.error("Failed to connect to MongoDB:", error);
+    return false;
   }
 }
 
