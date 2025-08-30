@@ -31,7 +31,20 @@ html {
 
 .section-header-title {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 140%;
+  font-size: clamp(1.2rem, 3vw, 2.5rem);
+  line-height: 1.2;
+  
+  @media (max-width: 768px) {
+    font-size: clamp(2.0rem, 4vw, 1.8rem);
+  }
+  
+  @media (max-width: 480px) {
+    font-size: clamp(1.4rem, 5vw, 1.5rem);
+  }
+  
+  @media (min-width: 1200px) {
+    font-size: clamp(3.0rem, 2.5vw, 2.2rem);
+  }
 }
 
 .header-icon {

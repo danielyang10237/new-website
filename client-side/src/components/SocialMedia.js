@@ -10,10 +10,8 @@ const moveIcons = () => {
   icons.forEach((icon) => {
     icon.style.top = `${parseFloat(icon.style.top) - 1}px`;
 
-    // if the icon is out of the screen, set it to the bottom
     if (parseFloat(icon.style.top) < -100) {
       icon.style.top = `${iconContainerHeight}px`;
-      // set icon left to its id
       icon.style.left = `${parseFloat(icon.id)}px`;
     }
   });
@@ -61,12 +59,12 @@ const handleResumeClick = () => {
 };
 
 const handleLinkedInClick = () => {
-  window.open("https://www.linkedin.com/in/daniel-li-yang-070279255", "_blank");
+  window.open("https://www.linkedin.com/in/daniel-yang-070279255/", "_blank");
 };
 
 const handleInstagramClick = () => {
   window.open(
-    "https://instagram.com/danielyang10237?igshid=NGVhN2U2NjQ0Yg==",
+    "https://www.instagram.com/daniel_yang81/",
     "_blank"
   );
 };
